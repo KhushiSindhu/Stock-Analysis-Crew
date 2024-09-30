@@ -8,9 +8,9 @@ import datetime
 import os
 import sys
 import io
-
-st.subheader(":robot_face: Stock Analysis Crew")
-st.caption("A Multi-Agentic AI system created by [Jay Shah](https://www.linkedin.com/in/jay-shah-qml) with :heart:")
+st.title("Welcome to the Stock Analysis Dashboard")
+st.subheader(":moneybag: Stock Analysis Crew of Agents")
+st.caption("A Multi-Agentic AI system created with :heart:")
 
 os.environ["OPENAI_MODEL_NAME"] = 'gpt-3.5-turbo'
 
@@ -50,13 +50,10 @@ with st.sidebar:
     reset_button = st.button(label='Reset', type='primary')
 
 
-    st.write('[Github](https://github.com/Jayshah25/Stock-Analysis-Crew)')
-
     st.write('[Get your Serper API key](https://serper.dev/)')
 
     st.write('[Get your OpenAI API key](https://platform.openai.com/account/api-keys)')
 
-    st.write('[Connect with Author on LinkedIn](https://www.linkedin.com/in/jay-shah-qml/)')
 
 if reset_button:
     st.rerun()
